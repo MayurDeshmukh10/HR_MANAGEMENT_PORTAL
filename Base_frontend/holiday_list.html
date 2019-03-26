@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
+Version: 4.7.5
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Holiday List</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Preview page of Metronic Admin Theme #4 for calendar page" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/clockface/css/clockface.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <!-- END HEAD -->
+
+   <body class="page-container-bg-solid page-header-fixed page-footer-fixed page-sidebar-closed-hide-logo">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="dashboard.html">
+                        <img src="img/HR.png" alt="logo" class="logo-default" /> </a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+               
+                <!-- BEGIN PAGE TOP -->
+                <div class="page-top">
+                    <!-- BEGIN HEADER SEARCH BOX -->
+                    <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+                    <form class="search-form" action="page_general_search_2.html" method="GET">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" placeholder="Search..." name="query">
+                            <span class="input-group-btn">
+                                <a href="javascript:;" class="btn submit">
+                                    <i class="icon-magnifier"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- END HEADER SEARCH BOX -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="separator hide"> </li>
+                            <!-- BEGIN NOTIFICATION DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <!-- DOC: Apply "dropdown-hoverable" class after "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
+                            <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
+                            <li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-bell"></i>
+                                    <span class="badge badge-success"> 7 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3>
+                                            <span class="bold">12 pending</span> notifications</h3>
+                                        <a href="page_user_profile_1.html">view all</a>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">just now</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-success">
+                                                            <i class="fa fa-plus"></i>
+                                                        </span> New user registered. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">3 mins</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Server #12 overloaded. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">10 mins</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Server #2 not responding. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">14 hrs</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> Application error. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">2 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Database overloaded 68%. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">3 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> A user IP blocked. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">4 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Storage Server #4 not responding dfdfdfd. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">5 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> System Error. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">9 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Storage server failed. </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END NOTIFICATION DROPDOWN -->
+                            <li class="separator hide"> </li>
+                            <!-- BEGIN INBOX DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-envelope-open"></i>
+                                    <span class="badge badge-danger"> 4 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3>You have
+                                            <span class="bold">7 New</span> Messages</h3>
+                                        <a href="app_inbox.html">view all</a>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong </span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout3/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson </span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong </span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END INBOX DROPDOWN -->
+                            <li class="separator hide"> </li>
+                            <!-- BEGIN TODO DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-tasks dropdown-dark" id="header_task_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-calendar"></i>
+                                    <span class="badge badge-primary"> 3 </span>
+                                </a>
+                                <ul class="dropdown-menu extended tasks">
+                                    <li class="external">
+                                        <h3>You have
+                                            <span class="bold">12 pending</span> tasks</h3>
+                                        <a href="?p=page_todo_2">view all</a>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">New release v1.2 </span>
+                                                        <span class="percent">30%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">40% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Application deployment</span>
+                                                        <span class="percent">65%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">65% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Mobile app release</span>
+                                                        <span class="percent">98%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 98%;" class="progress-bar progress-bar-success" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">98% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Database migration</span>
+                                                        <span class="percent">10%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 10%;" class="progress-bar progress-bar-warning" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">10% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Web server upgrade</span>
+                                                        <span class="percent">58%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 58%;" class="progress-bar progress-bar-info" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">58% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Mobile development</span>
+                                                        <span class="percent">85%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 85%;" class="progress-bar progress-bar-success" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">85% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">New UI release</span>
+                                                        <span class="percent">38%</span>
+                                                    </span>
+                                                    <span class="progress progress-striped">
+                                                        <span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">38% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END TODO DROPDOWN -->
+                            <!-- BEGIN USER LOGIN DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-user dropdown-dark">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="username username-hide-on-mobile"> naushaba zerin </span>
+                                    <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                                    <img alt="" class="img-circle" src="img/profile.jpg" /> </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="user_profile1.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_calendar.html">
+                                            <i class="icon-calendar"></i> My Calendar </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_inbox.html">
+                                            <i class="icon-envelope-open"></i> My Inbox
+                                            <span class="badge badge-danger"> 3 </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_todo_2.html">
+                                            <i class="icon-rocket"></i> My Tasks
+                                            <span class="badge badge-success"> 7 </span>
+                                        </a>
+                                    </li>
+                                    <li class="divider"> </li>
+                                    <li>
+                                        <a href="page_user_lock_1.html">
+                                            <i class="icon-lock"></i> Lock Screen </a>
+                                    </li>
+                                    <li>
+                                        <a href="page_user_login_1.html">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                            
+                        </ul>
+                    </div>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+                <!-- END PAGE TOP -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <ul class="page-sidebar-menu   " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                        <li class="nav-item start ">
+                            <a href="dashboard.html" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">Dashboard</span>
+                                
+                            </a>
+                            
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">Features</h3>
+                        </li>
+                        
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-user"></i>
+                                <span class="title">Employees</span>
+
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="employee_list.html" class="nav-link ">
+                                        <span class="title">Employee List</span>
+                                        <span class="selected"></span>
+
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-briefcase"></i>
+                                <span class="title">Department</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="department_list.html" class="nav-link ">
+                                        <span class="title">Department List</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-trophy"></i>
+                                <span class="title">Award</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="awards_list.html" class="nav-link ">
+                                        <span class="title">Award List
+                                            </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-wallet"></i>
+                                <span class="title">Expense</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="expense_list.html" class="nav-link ">
+                                        <span class="title">Expense List</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-briefcase"></i>
+                                <span class="title">Holidays</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu" >
+                                <li class="active">
+                                    <a href="holiday_list.html" class="nav-link ">
+                                        <span class="title">Holidays List</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="?p=" class="nav-link nav-toggle">
+                                <i class="icon-users"></i>
+                                <span class="title">Attendance</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="mark_attendance.html" class="nav-link ">
+                                    <i class="icon-user-following"></i>
+                                        <span class="title">Mark Attendance</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item  ">
+                                    <a href="view_attendance.html" class="nav-link ">
+                                    <i class="icon-eye"></i>
+                                    
+                                        <span class="title">View Attendance</span>
+                                    </a>
+                                </li>
+
+                                
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-plane"></i>
+                                <span class="title">Leave Applications</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="leave_types.html" class="nav-link ">
+                                    <i class="icon-rocket"></i>
+                                        <span class="title">Leave Types</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="applications.html" class="nav-link ">
+                                        <span class="title">Applications List</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-pointer"></i>
+                                <span class="title">Notice Board</span>
+                                <span class="arrow"></span>
+                            </a>
+
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="notice_list.html" class="nav-link ">
+                                        <span class="title">Notice List</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            
+                        </li>
+
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">Settings</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="general_settings.html" class="nav-link ">
+                                        <span class="title">General Setting</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="profile_settings.html" class="nav-link ">
+                                        <span class="title">profile Setting</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            
+                        </li>
+                        
+           
+                            
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+            <!-- END SIDEBAR -->
+
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <!-- BEGIN PAGE HEAD-->
+                    <div class="page-head">
+                        <!-- BEGIN PAGE TITLE -->
+                        <div class="page-title">
+                            <h1>HOLIDAYS
+                                <small>Holiday List</small>
+                            </h1>
+                        </div>
+                        <!-- END PAGE TITLE -->
+                       
+                    </div>
+                    <!-- END PAGE HEAD-->
+                    <!-- BEGIN PAGE BREADCRUMB -->
+                    <ul class="page-breadcrumb breadcrumb">
+                        <li>
+                            <a href="dashboard.html">Home</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <a href="index.html">Holidays</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <a href="index.html">Holiday List</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        
+                    </ul>
+                    <!-- END PAGE BREADCRUMB -->
+                    <!-- BEGIN PAGE BASE CONTENT -->
+
+                    
+            
+                       <a class="btn green" data-target="#basic" data-toggle="modal">Add Holidays
+                           <i class="fa fa-plus"></i>
+                      </a>
+                      <hr>
+                       
+                       
+                   
+                            <!-- BEGIN SAMPLE TABLE PORTLET-->
+                            
+                            <!-- END SAMPLE TABLE PORTLET-->
+
+                    <div class="col-md-3">
+                        <ul class="ver-inline-menu tabbable margin-bottom-10">
+                             <li class="active">
+                                    <a data-toggle="tab" href="#January" aria-expanded="true">
+                                    <i class="fa fa-calendar"></i> January </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li>
+                                    <a data-toggle="tab" href="#February">
+                                    <i class="fa fa-calendar"></i> February </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li class="">
+                                    <a data-toggle="tab" href="#March" aria-expanded="false">
+                                    <i class="fa fa-calendar"></i> March </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li class="">
+                                    <a data-toggle="tab" href="#April" aria-expanded="false">
+                                    <i class="fa fa-calendar"></i> April </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li class="">
+                                    <a data-toggle="tab" href="#May" aria-expanded="false">
+                                    <i class="fa fa-calendar"></i> May </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li class="">
+                                    <a data-toggle="tab" href="#June" aria-expanded="false">
+                                    <i class="fa fa-calendar"></i> June </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li class="">
+                                    <a data-toggle="tab" href="#July" aria-expanded="false">
+                                    <i class="fa fa-calendar"></i> July </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li>
+                                    <a data-toggle="tab" href="#August">
+                                    <i class="fa fa-calendar"></i> August </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li>
+                                    <a data-toggle="tab" href="#September">
+                                    <i class="fa fa-calendar"></i> September </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li>
+                                    <a data-toggle="tab" href="#October">
+                                    <i class="fa fa-calendar"></i> October </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li>
+                                    <a data-toggle="tab" href="#November">
+                                    <i class="fa fa-calendar"></i> November </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                                                    <li>
+                                    <a data-toggle="tab" href="#December">
+                                    <i class="fa fa-calendar"></i> December </a>
+                                    <span class="after">
+                                    </span>
+                             </li>
+                        
+                        </ul>
+                    </div>
+
+                     <div class="col-md-9">
+                        <div class="tab-content">
+                                                    <div id="January" class="tab-pane  active">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>January
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row1">
+                                                                    <td> 1 </td>
+                                                                    <td> 03 January 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('1',' 03 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row2">
+                                                                    <td> 2 </td>
+                                                                    <td> 10 January 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('2',' 10 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row54">
+                                                                    <td> 3 </td>
+                                                                    <td> 15 January 2016 </td>
+                                                                    <td> Pongal </td>
+                                                                    <td> Fri </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('54',' 15 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row3">
+                                                                    <td> 4 </td>
+                                                                    <td> 17 January 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('3',' 17 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row53">
+                                                                    <td> 5 </td>
+                                                                    <td> 19 January 2016 </td>
+                                                                    <td> Someday </td>
+                                                                    <td> Tue </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('53',' 19 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row4">
+                                                                    <td> 6 </td>
+                                                                    <td> 24 January 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('4',' 24 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row5">
+                                                                    <td> 7 </td>
+                                                                    <td> 31 January 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('5',' 31 January 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="February" class="tab-pane ">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>February
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row289">
+                                                                    <td> 1 </td>
+                                                                    <td> 01 February 2016 </td>
+                                                                    <td> dasdasds </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('289',' 01 February 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row6">
+                                                                    <td> 2 </td>
+                                                                    <td> 07 February 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('6',' 07 February 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row7">
+                                                                    <td> 3 </td>
+                                                                    <td> 14 February 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('7',' 14 February 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row8">
+                                                                    <td> 4 </td>
+                                                                    <td> 21 February 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('8',' 21 February 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row9">
+                                                                    <td> 5 </td>
+                                                                    <td> 28 February 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('9',' 28 February 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row272">
+                                                                    <td> 6 </td>
+                                                                    <td> 27 February 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('272',' 27 February 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="March" class="tab-pane">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>March
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row10">
+                                                                    <td> 1 </td>
+                                                                    <td> 06 March 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('10',' 06 March 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row11">
+                                                                    <td> 2 </td>
+                                                                    <td> 13 March 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('11',' 13 March 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row12">
+                                                                    <td> 3 </td>
+                                                                    <td> 20 March 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('12',' 20 March 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row13">
+                                                                    <td> 4 </td>
+                                                                    <td> 27 March 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('13',' 27 March 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row266">
+                                                                    <td> 5 </td>
+                                                                    <td> 01 March 2017 </td>
+                                                                    <td> oo </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('266',' 01 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row263">
+                                                                    <td> 6 </td>
+                                                                    <td> 05 March 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('263',' 05 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row273">
+                                                                    <td> 7 </td>
+                                                                    <td> 07 March 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Tue </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('273',' 07 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row268">
+                                                                    <td> 8 </td>
+                                                                    <td> 08 March 2017 </td>
+                                                                    <td> sasi </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('268',' 08 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row264">
+                                                                    <td> 9 </td>
+                                                                    <td> 09 March 2017 </td>
+                                                                    <td> ygj </td>
+                                                                    <td> Thu </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('264',' 09 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row280">
+                                                                    <td> 10 </td>
+                                                                    <td> 15 March 2017 </td>
+                                                                    <td> test </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('280',' 15 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row267">
+                                                                    <td> 11 </td>
+                                                                    <td> 17 March 2017 </td>
+                                                                    <td> sasikumar </td>
+                                                                    <td> Fri </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('267',' 17 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row279">
+                                                                    <td> 12 </td>
+                                                                    <td> 20 March 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('279',' 20 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row265">
+                                                                    <td> 13 </td>
+                                                                    <td> 23 March 2017 </td>
+                                                                    <td> ooo </td>
+                                                                    <td> Thu </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('265',' 23 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row291">
+                                                                    <td> 14 </td>
+                                                                    <td> 28 March 2017 </td>
+                                                                    <td>  cms </td>
+                                                                    <td> Tue </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('291',' 28 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row274">
+                                                                    <td> 15 </td>
+                                                                    <td> 31 March 2017 </td>
+                                                                    <td> nnnn </td>
+                                                                    <td> Fri </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('274',' 31 March 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="April" class="tab-pane">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>April
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row14">
+                                                                    <td> 1 </td>
+                                                                    <td> 03 April 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('14',' 03 April 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row15">
+                                                                    <td> 2 </td>
+                                                                    <td> 10 April 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('15',' 10 April 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row16">
+                                                                    <td> 3 </td>
+                                                                    <td> 17 April 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('16',' 17 April 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row17">
+                                                                    <td> 4 </td>
+                                                                    <td> 24 April 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('17',' 24 April 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row284">
+                                                                    <td> 5 </td>
+                                                                    <td> 04 April 2017 </td>
+                                                                    <td> do </td>
+                                                                    <td> Tue </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('284',' 04 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row288">
+                                                                    <td> 6 </td>
+                                                                    <td> 05 April 2017 </td>
+                                                                    <td> sick </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('288',' 05 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row286">
+                                                                    <td> 7 </td>
+                                                                    <td> 10 April 2017 </td>
+                                                                    <td> sdsd </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('286',' 10 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row276">
+                                                                    <td> 8 </td>
+                                                                    <td> 11 April 2017 </td>
+                                                                    <td> ssss </td>
+                                                                    <td> Tue </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('276',' 11 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row283">
+                                                                    <td> 9 </td>
+                                                                    <td> 12 April 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('283',' 12 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row278">
+                                                                    <td> 10 </td>
+                                                                    <td> 14 April 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Fri </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('278',' 14 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row294">
+                                                                    <td> 11 </td>
+                                                                    <td> 20 April 2017 </td>
+                                                                    <td>  </td>
+                                                                    <td> Thu </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('294',' 20 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row292">
+                                                                    <td> 12 </td>
+                                                                    <td> 24 April 2017 </td>
+                                                                    <td> Hello </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('292',' 24 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row285">
+                                                                    <td> 13 </td>
+                                                                    <td> 26 April 2017 </td>
+                                                                    <td> sdsd </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('285',' 26 April 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="May" class="tab-pane">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>May
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row18">
+                                                                    <td> 1 </td>
+                                                                    <td> 01 May 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('18',' 01 May 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row19">
+                                                                    <td> 2 </td>
+                                                                    <td> 08 May 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('19',' 08 May 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row20">
+                                                                    <td> 3 </td>
+                                                                    <td> 15 May 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('20',' 15 May 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row21">
+                                                                    <td> 4 </td>
+                                                                    <td> 22 May 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('21',' 22 May 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row22">
+                                                                    <td> 5 </td>
+                                                                    <td> 29 May 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('22',' 29 May 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row295">
+                                                                    <td> 6 </td>
+                                                                    <td> 01 May 2017 </td>
+                                                                    <td> Labour Day </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('295',' 01 May 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row297">
+                                                                    <td> 7 </td>
+                                                                    <td> 08 May 2017 </td>
+                                                                    <td> rr3323r2 </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('297',' 08 May 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row298">
+                                                                    <td> 8 </td>
+                                                                    <td> 10 May 2017 </td>
+                                                                    <td> Shadi </td>
+                                                                    <td> Wed </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('298',' 10 May 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row300">
+                                                                    <td> 9 </td>
+                                                                    <td> 15 May 2017 </td>
+                                                                    <td> emni </td>
+                                                                    <td> Mon </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('300',' 15 May 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="June" class="tab-pane">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>June
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row23">
+                                                                    <td> 1 </td>
+                                                                    <td> 05 June 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('23',' 05 June 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row24">
+                                                                    <td> 2 </td>
+                                                                    <td> 12 June 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('24',' 12 June 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row25">
+                                                                    <td> 3 </td>
+                                                                    <td> 19 June 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('25',' 19 June 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row26">
+                                                                    <td> 4 </td>
+                                                                    <td> 26 June 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('26',' 26 June 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="July" class="tab-pane">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>July
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row27">
+                                                                    <td> 1 </td>
+                                                                    <td> 03 July 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('27',' 03 July 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row28">
+                                                                    <td> 2 </td>
+                                                                    <td> 10 July 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('28',' 10 July 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row29">
+                                                                    <td> 3 </td>
+                                                                    <td> 17 July 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('29',' 17 July 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row30">
+                                                                    <td> 4 </td>
+                                                                    <td> 24 July 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('30',' 24 July 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row31">
+                                                                    <td> 5 </td>
+                                                                    <td> 31 July 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('31',' 31 July 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="August" class="tab-pane ">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>August
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row32">
+                                                                    <td> 1 </td>
+                                                                    <td> 07 August 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('32',' 07 August 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row33">
+                                                                    <td> 2 </td>
+                                                                    <td> 14 August 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('33',' 14 August 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row34">
+                                                                    <td> 3 </td>
+                                                                    <td> 21 August 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('34',' 21 August 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row35">
+                                                                    <td> 4 </td>
+                                                                    <td> 28 August 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('35',' 28 August 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="September" class="tab-pane ">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>September
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row36">
+                                                                    <td> 1 </td>
+                                                                    <td> 04 September 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('36',' 04 September 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row37">
+                                                                    <td> 2 </td>
+                                                                    <td> 11 September 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('37',' 11 September 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row38">
+                                                                    <td> 3 </td>
+                                                                    <td> 18 September 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('38',' 18 September 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row39">
+                                                                    <td> 4 </td>
+                                                                    <td> 25 September 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('39',' 25 September 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row296">
+                                                                    <td> 5 </td>
+                                                                    <td> 02 September 2017 </td>
+                                                                    <td> Independent Day </td>
+                                                                    <td> Sat </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('296',' 02 September 2017')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="October" class="tab-pane ">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>October
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row40">
+                                                                    <td> 1 </td>
+                                                                    <td> 02 October 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('40',' 02 October 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row41">
+                                                                    <td> 2 </td>
+                                                                    <td> 09 October 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('41',' 09 October 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row42">
+                                                                    <td> 3 </td>
+                                                                    <td> 16 October 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('42',' 16 October 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row43">
+                                                                    <td> 4 </td>
+                                                                    <td> 23 October 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('43',' 23 October 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row44">
+                                                                    <td> 5 </td>
+                                                                    <td> 30 October 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('44',' 30 October 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="November" class="tab-pane ">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>November
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row45">
+                                                                    <td> 1 </td>
+                                                                    <td> 06 November 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('45',' 06 November 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row46">
+                                                                    <td> 2 </td>
+                                                                    <td> 13 November 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('46',' 13 November 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row47">
+                                                                    <td> 3 </td>
+                                                                    <td> 20 November 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('47',' 20 November 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row48">
+                                                                    <td> 4 </td>
+                                                                    <td> 27 November 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('48',' 27 November 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                                                    <div id="December" class="tab-pane ">
+                            <div class="portlet box blue">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-calendar"></i>December
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th> # </th>
+                                                                <th> Date </th>
+                                                                <th> Occasion </th>
+                                                                <th> Day </th>
+                                                                <th> Action </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                                
+                                                                <tr id="row49">
+                                                                    <td> 1 </td>
+                                                                    <td> 04 December 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('49',' 04 December 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row50">
+                                                                    <td> 2 </td>
+                                                                    <td> 11 December 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('50',' 11 December 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row51">
+                                                                    <td> 3 </td>
+                                                                    <td> 18 December 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('51',' 18 December 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                
+                                                                <tr id="row52">
+                                                                    <td> 4 </td>
+                                                                    <td> 25 December 2016 </td>
+                                                                    <td> Sunday </td>
+                                                                    <td> Sun </td>
+                                                                    <td>
+                                                                        <button type="button" onclick="del('52',' 25 December 2016')" href="#" class="btn btn-xs red">
+                                                                           <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                 </tr>
+                                                                                                                            
+                                                            </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                        
+
+                        </div>
+
+                    </div>       
+                                
+                    
+
+
+
+                    <!-- END PAGE BASE CONTENT -->
+                    <div class="modal fade" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">Add Holiday</h4>
+                                                </div>
+                                                <div class="modal-body"> <p> 
+
+                                <div class="portlet-body">
+                                    <div class="scroller" style="height:200px" data-rail-visible="1" data-rail-color="yellow" data-handle-color="#a1b2bd">
+                                        
+                                        <form class="form-horizontal" role="form">
+
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3">Date</label>
+                                                <div class="col-md-5">
+                                                    <div class="input-group date" data-provide="datepicker">
+                                                        <input type="text" class="form-control" readonly>
+                                                        <span class="input-group-btn">
+                                                            <button class="btn default" type="button">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                    <!-- /input-group -->
+                                                    <span class="help-block"> Select date </span>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Occasion</label>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="form-control" name="currentSalary" placeholder="occasion" value="">
+                                                </div>
+                                            </div>
+
+                                        </form>    
+                                    </div>
+
+                                </div>
+
+
+                                                </p>
+                                            
+
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn green">Save changes</button>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+
+                       
+                                          
+
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+            <!-- BEGIN QUICK SIDEBAR -->
+            </div>
+        <!-- END CONTAINER -->
+           
+        <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script> 
+<script src="../assets/global/plugins/ie8.fix.min.js"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/apps/scripts/calendar.min.js" type="text/javascript"></script>
+        <script src="assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+        <script>
+            $(document).ready(function()
+            {
+                $('#clickmewow').click(function()
+                {
+                    $('#radio1003').attr('checked', 'checked');
+                });
+            })
+        </script>
+    </body>
+
+</html>
